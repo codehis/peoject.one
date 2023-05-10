@@ -1,0 +1,52 @@
+import React, { useState } from "react";
+import "./Cas.css";
+import List from "./component/List";
+
+const App = () => {
+  const [data, setData] = useState();
+  const [finalDate, setFinaldata] = useState([]);
+  const Dlist = (event) => {
+    setData(event.target.value);
+  };
+  const finalAdd = () => {
+   setFinaldata((olddata)=>{
+    return [...olddata,data]
+   })
+   setData('');
+    
+  };
+
+  const deleteitem = (id) => {
+    setFinaldata((olddata)=>{
+      // when user click on delete button thwn we get data and id in aaryele nad index =id me
+      return olddata.filter((aaryele,index)=>{
+      return index!==id;
+      })
+    })
+  };
+  return (
+    <React.Fragment>
+      <div className="todo">
+        <h1>ToDo List</h1>
+
+        <input type="text" placeholder="Add a Items" onChange={Dlist} value={data}></input>
+        <button onClick={finalAdd}>+</button>
+       
+      
+
+        <div className="list">
+          
+         {finalDate.map((dvalue,index)=>{
+          return<>
+          <List key={index} id={index}  text={dvalue} 
+          onSelect={deleteitem}/>
+          </>
+         })}
+          
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default App;

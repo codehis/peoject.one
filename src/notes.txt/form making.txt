@@ -1,0 +1,31 @@
+import React, { useState } from "react";
+import "./Cas.css";
+
+const App=(event)=>{
+ 
+  const [name,setName]=useState();
+  const[fullname,setFull]=useState();
+  const final=()=>{
+    setFull(name)
+  }
+
+  const inputevent=(event)=>{
+  setName(event.target.value)
+  }
+  
+  return(
+    <>
+    <div className="form">
+      <h1>hello {fullname}</h1>
+      <input type="text" placeholder="Enter Your Name" onChange={inputevent} value={name} />
+      
+
+      <button onClick={final}>Click Me</button>
+    </div>
+    
+    
+    </>
+  )
+}
+
+export default App;

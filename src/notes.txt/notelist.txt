@@ -1,0 +1,21 @@
+import React from 'react'
+
+const Notelist=(props)=> {
+
+  return (
+    <React.Fragment>
+<div className="listdata">
+
+   {props.select.map((vdata)=>{
+    return <li>{vdata} <button id='btn1'>Delete</button></li>
+   
+   })}
+  
+    
+</div>
+
+    </React.Fragment>
+  )
+}
+
+export default Notelist;

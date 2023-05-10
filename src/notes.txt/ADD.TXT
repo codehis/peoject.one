@@ -1,0 +1,45 @@
+import React, { useState } from "react";
+import "./Cas.css";
+
+const App = () => {
+  const [data, setData] = useState();
+  const [finalDate, setFinaldata] = useState([]);
+  const Dlist = (event) => {
+    setData(event.target.value);
+  };
+  const finalAdd = () => {
+    setFinaldata((olddata)=>{
+      return [...olddata,data]
+    });
+    setData("");
+  };
+
+  const finaldelete = () => {
+    
+  };
+  return (
+    <React.Fragment>
+      <div className="todo">
+        <h1>ToDo List</h1>
+
+        <input type="text" placeholder="Add a Items" onChange={Dlist} value={data}></input>
+        <button onClick={finalAdd}>+</button>
+        <button id="btn" onClick={finaldelete}>
+          -
+        </button>
+
+        <div className="list">
+          
+            {finalDate.map((vdata)=>{
+              return<>
+              <li>{vdata}</li>
+              </>
+            })}
+          
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default App;

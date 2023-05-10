@@ -1,0 +1,509 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+#root{
+  background:rgba(185, 180, 194, 0.609);
+  height: 10000px
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+nav {
+  display: flex;
+  background-color: yellow;
+  height: 57px;
+}
+.logo {
+  height: 100px;
+}
+.logo img {
+  margin-left: 10px;
+  height: 57px;
+}
+
+.name {
+  font-size: 15px;
+  margin-left: 5%;
+}
+.middle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  
+}
+#mid {
+  width: 50%;
+  height: 100px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+
+  font-size: 18px;
+  border-radius: 7px;
+  padding: 5px 5px;
+}
+.btn {
+  width: 50%;
+  margin-top: 2%;
+}
+#btn {
+  width: 15%;
+  height: 30px;
+  margin-left: 32%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+#btn img{
+  width: 60%;
+  height: 33px;
+  margin-left: 32%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 31px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin-top: -2%;
+}
+#btn1 img{
+  /* width:30% ; */
+  width: 60%;
+  height: 33px;
+  border-radius: 30px;
+}
+#btn1 {
+  border: none;
+  background: transparent;
+ 
+  margin-left: 2%;
+  height: 30px;
+  width: 15%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.listdata {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* background: linear-gradient(rgb(216, 157, 19),rgb(49, 225, 210)); */
+ height: 100px;
+
+}
+.cart{
+  list-style: none;
+ margin: 1%;
+   background: white;
+   width: 20%;
+   padding: 4px 4px;
+   border: 1px solid;
+   border-radius: 8px;
+   overflow: hidden;
+   
+}
+/*  */
+#btn2 {
+  margin-left: 81%;
+  margin-top: 7%;
+  /* border-radius: 34px; */
+  /* height: 54px; */
+  /* border: 1px solid; */
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+ 
+
+}
+
+#btn2 img{
+  height: 54px;
+  width: 100%;
+  
+
+
+  border-radius: 34px;
+
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+  nav {
+    display: flex;
+    background-color: yellow;
+    height: 57px;
+  }
+  .logo {
+    height: 100px;
+  }
+  .logo img {
+    margin-left: 10px;
+    height: 57px;
+  }
+  
+  .name {
+    font-size: 15px;
+    margin-left: 5%;
+  }
+  .middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    
+  }
+  #mid {
+    width: 70%;
+    height: 100px;
+  }
+  textarea {
+    padding: 5px 5px;
+    width: 100%;
+    height: 100px;
+    border: 3px solid black;
+    font-size: 18px;
+    border-radius: 7px;
+  }
+  .btn {
+    width: 60%;
+    margin-top: 2%;
+  }
+  #btn img{
+    width: 46%;
+    height: 56px;
+    margin-left: 32%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin-top: -2%;
+  }
+  #btn1 img{
+    
+    width: 54%;
+    height: 54px;
+    border-radius: 30px;
+  }
+  #btn {
+    width: 30%;
+    height: 30px;
+    margin-left: 32%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  #btn1 {
+    border: none;
+    background: transparent;
+    margin-left: 2%;
+    height: 30px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .listdata {
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 100%;
+   
+  
+  }
+  .cart{
+    list-style: none;
+    margin: 1%;
+    width: 48%;
+    padding: 4px 4px;
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+     
+  }
+  #btn2 {
+    margin-left: 81%;
+    margin-top: 7%;
+    border-radius: 34px;
+    height: 54px;
+    border: 1px solid;
+    cursor: pointer;
+  
+  }
+  
+}
+@media screen and (min-width:500px)and (max-width:700px){
+  #btn img{
+    width: 46%;
+    height: 56px;
+    margin-left: 39%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin-top: -2%;
+  }
+  #btn1 img{
+    
+    width: 54%;
+    height: 54px;
+    border-radius: 30px;
+  }
+  nav {
+    display: flex;
+    background-color: yellow;
+    height: 57px;
+  }
+  .logo {
+    height: 100px;
+  }
+  .logo img {
+    margin-left: 10px;
+    height: 57px;
+  }
+  
+  .name {
+    font-size: 15px;
+    margin-left: 5%;
+  }
+  .middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    
+  }
+  #mid {
+    width: 90%;
+    height: 100px;
+  }
+  textarea {
+    padding: 5px 5px;
+    width: 100%;
+    height: 100px;
+    border: 3px solid black;
+    font-size: 18px;
+    border-radius: 7px;
+  }
+  .btn {
+    width: 50%;
+    margin-top: 2%;
+  }
+  #btn {
+    width: 40%;
+    height: 30px;
+    margin-left: 32%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #btn1 {
+    margin-left: 32%;
+    height: 30px;
+    width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+  .listdata {
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 100%;
+   
+  
+  }
+  .cart{
+    
+    list-style: none;
+    margin: 1%;
+    width: 48%;
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 4px;
+     
+  }
+  #btn2 {
+    margin-left: 81%;
+    margin-top: 7%;
+    border-radius: 34px;
+    height: 54px;
+    border: 1px solid;
+    cursor: pointer;
+  
+  }
+}
+@media screen and (max-width:500px) {
+  
+  #btn img{
+    width: 46%;
+    height: 56px;
+    margin-left: 0%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 130px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin-top: -2%;
+  }
+  #btn1 img{
+    
+    width: 60%;
+    height: 54px;
+    margin-left: 10%;
+    border-radius: 30px;
+  }
+  nav {
+    display: flex;
+    background-color:yellow;
+    height: 57px;
+  }
+  .logo {
+    height: 100px;
+    
+  }
+  .logo img {
+    margin-left: 10px;
+    height: 57px;
+    border-radius: 50px;
+    
+  }
+  
+  .name {
+    font-size: 15px;
+    margin-left: 5%;
+  }
+  .middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    
+  }
+  #mid {
+    width: 100%;
+    height: 100px;
+  }
+  textarea {
+    padding: 5px 5px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 18px;
+    border-radius: 7px;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18%;
+    height: 16px;
+    margin-right: 34%;
+  }
+  #btn {
+    width: 36%;
+    height: 30px;
+   
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #btn1 {
+    margin-left: -11%;
+    height: 22px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 0%;
+  }
+  .listdata {
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 100%;
+   
+  
+  }
+  .cart{
+    
+    list-style: none;
+    margin: 1%;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 4px;
+     
+  }
+  #btn2 {
+    margin-left: 81%;
+    margin-top: 7%;
+    border-radius: 34px;
+    height: 54px;
+    border: 1px solid;
+    cursor: pointer;
+  
+  }
+  #btn2 {
+    margin-left: 81%;
+    margin-top: 7%;
+    /* border-radius: 34px; */
+    /* height: 54px; */
+    /* border: 1px solid; */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+   
+  
+  }
+  
+  #btn2 img{
+    height: 40px;
+    width: 100%;
+    
+  margin-left:70%;
+  margin-top: 20%;
+  
+    border-radius: 34px;
+  
+  }
+}

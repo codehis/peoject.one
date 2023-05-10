@@ -1,0 +1,49 @@
+import React, { useState } from "react";
+import "./Cas.css";
+
+const App = () => {
+  const [name, setName] = useState();
+  const [full, setFullname] = useState();
+  const even = (event) => {
+    setName(event.target.value);
+  };
+
+  const final = (event) => {
+    event.preventDefault();
+    setFullname(name);
+  };
+  const [emai, setEmail] = useState();
+  const email = (event) => {
+    setEmail(event.target.value);
+  };
+  const[fullemail,setMail]=useState();
+
+const emailfinal=()=>{
+  setMail(emai)
+}
+
+  return (
+    <React.Fragment>
+      <form onSubmit={final} >
+        <div className="loginpage">
+          <h1>Hello {full}</h1>
+          <div>{fullemail}</div>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            onChange={even}
+          ></input>
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            onChange={email}
+          ></input>
+          <input type="password" placeholder="Password"></input>
+          <button onClick={emailfinal} >Submit</button>
+        </div>
+      </form>
+    </React.Fragment>
+  );
+};
+
+export default App;
