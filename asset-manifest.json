@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/peoject.one/static/css/main.867becdf.css",
+    "main.js": "/peoject.one/static/js/main.abd40c60.js",
+    "static/js/787.2be51e95.chunk.js": "/peoject.one/static/js/787.2be51e95.chunk.js",
+    "index.html": "/peoject.one/index.html",
+    "main.867becdf.css.map": "/peoject.one/static/css/main.867becdf.css.map",
+    "main.abd40c60.js.map": "/peoject.one/static/js/main.abd40c60.js.map",
+    "787.2be51e95.chunk.js.map": "/peoject.one/static/js/787.2be51e95.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.867becdf.css",
+    "static/js/main.abd40c60.js"
+  ]
+}
